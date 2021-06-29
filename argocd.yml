@@ -10,6 +10,6 @@ spec:
   project: default
   source:
     path: Deployment.yml
-    repoURL: https://github.com/caglarfurkan/python-helloworld
+    repoURL: https://github.com/furkancaglar/python-helloworld
     targetRevision: HEAD
   syncPolicy: {}
