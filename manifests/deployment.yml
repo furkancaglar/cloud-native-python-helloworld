@@ -3,8 +3,9 @@ kind: Deployment
 metadata:
   labels:
     app: python-helloworld
+    tag: latest
   name: python-helloworld
-  namespace: default
+  namespace: python-argocd
 spec:
   replicas: 3
   selector:
