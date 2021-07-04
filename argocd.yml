@@ -5,11 +5,11 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: default
+    namespace: python-argocd
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: .
+    path: ./manifests
     repoURL: https://github.com/furkancaglar/python-helloworld
     targetRevision: HEAD
   syncPolicy: {}
