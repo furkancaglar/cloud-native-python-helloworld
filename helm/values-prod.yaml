@@ -1,2 +1,6 @@
 namespace:
   name: python-argocd-prod
+
+service:
+  ports:
+    nodePort: 30008
