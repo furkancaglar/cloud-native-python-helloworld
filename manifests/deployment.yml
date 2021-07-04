@@ -25,6 +25,18 @@ spec:
         - image: caglarfurkan/python-helloworld:latest
           imagePullPolicy: Always
           name: python-helloworld
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 6111
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 6111
+            initialDelaySeconds: 5
+            periodSeconds: 5
           resources:
             requests:
               cpu: 50m
