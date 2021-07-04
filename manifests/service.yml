@@ -14,5 +14,4 @@ spec:
       nodePort: 30007
   selector:
     app: python-helloworld
-    tag: latest
   type: NodePort
