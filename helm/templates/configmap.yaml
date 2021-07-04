@@ -4,4 +4,4 @@ data:
 kind: ConfigMap
 metadata:
   name: python-helloworld
-  namespace: python-argocd
+  namespace: {{ .Values.namespace.name }}

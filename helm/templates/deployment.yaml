@@ -5,9 +5,9 @@ metadata:
     app: python-helloworld
     tag: latest
   name: python-helloworld
-  namespace: python-argocd
+  namespace: {{ .Values.namespace.name }}
 spec:
-  replicas: 3
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: python-helloworld
@@ -22,7 +22,7 @@ spec:
         app: python-helloworld
     spec:
       containers:
-        - image: caglarfurkan/python-helloworld:latest
+        - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: Always
           name: python-helloworld
           livenessProbe:

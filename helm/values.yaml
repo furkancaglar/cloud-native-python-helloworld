@@ -1,0 +1,8 @@
+namespace:
+  name: python-argocd
+
+image:
+  repository: caglarfurkan/python-helloworld
+  tag: latest
+
+replicaCount: 3
