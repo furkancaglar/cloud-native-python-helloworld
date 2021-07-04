@@ -11,7 +11,8 @@ spec:
     - port: 8111
       protocol: TCP
       targetPort: 6111
+      nodePort: 3007
   selector:
     app: python-helloworld
     tag: latest
-  type: ClusterIP
+  type: NodePort
