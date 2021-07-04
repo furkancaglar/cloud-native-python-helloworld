@@ -8,7 +8,7 @@ metadata:
   namespace: python-argocd
 spec:
   ports:
-    - port: 8111
+    - port: 6111
       protocol: TCP
       targetPort: 6111
       nodePort: 30007
